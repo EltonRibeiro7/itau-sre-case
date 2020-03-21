@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "30393ae9-831a-44e8-b802-1c35fb99827a",
+		"name": "itau-sre-case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_all_breeds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/v1/breeds",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"breeds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_breed_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/v1/breeds/bamb",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"breeds",
+						"bamb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_breed_by_name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/v1/breeds?name=Abyssinian",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"breeds"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Abyssinian"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_breed_by_temperament",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/v1/breeds/?temperament=Curious",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"breeds",
+						""
+					],
+					"query": [
+						{
+							"key": "temperament",
+							"value": "Curious"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_breed_by_origin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/v1/breeds?origin=United States",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"v1",
+						"breeds"
+					],
+					"query": [
+						{
+							"key": "origin",
+							"value": "United States"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "52d9a33b-35ab-40a6-a73e-39f3961cc89c",
+			"key": "base_url",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
