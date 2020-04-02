@@ -13,7 +13,6 @@ services:
       - "3306:3306"
     volumes:
       - "mysql_data:/var/lib/mysql"
-      - "./infra/mysql/create_case_db.sql:/docker-entrypoint-initdb.d/create_database.sql"
     networks:
       - case-network
     healthcheck:
