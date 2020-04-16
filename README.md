@@ -1,4 +1,4 @@
-# **Itau SRE Case - thecatapi.com**
+# **SRE Case - thecatapi.com**
 
 ## **OVERVIEW**
 
